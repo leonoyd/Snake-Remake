@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="snake" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="libsfml-graphics" />
+					<Add library="libsfml-window" />
+					<Add library="libsfml-system" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/snake" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libsfml-graphics" />
+					<Add library="libsfml-system" />
+					<Add library="libsfml-window" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../SFML-2.5.0/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="../../SFML-2.5.0/lib" />
+		</Linker>
+		<Unit filename="include/Fruit.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/MainMenu.h" />
+		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Platform.h" />
+		<Unit filename="include/SubMenu.h" />
+		<Unit filename="include/snake.h" />
+		<Unit filename="include/top_score.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="project_settings.h" />
+		<Unit filename="src/Fruit.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/MainMenu.cpp" />
+		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Platform.cpp" />
+		<Unit filename="src/SubMenu.cpp" />
+		<Unit filename="src/snake.cpp" />
+		<Unit filename="src/top_score.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
